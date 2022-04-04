@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etiquetas de bloque</title>
+  </head>
+  <!--
+    address: Se utiliza para aportar información de contacto para el
+    article más cercano o para todo el body
+
+    blockquote: Se utiliza para marcar las citas a otros autores o
+    documentos.
+
+    Se puede incluir el atributo cite para poner un enlace al documento original o fuente
+
+    pre: Se utiliza para tener código preformateado que necesita ser
+    representado igual que se esribió.
+
+    div-> Se usa como división del documento, semánticamente
+    significa nada, es un contenedor genérico que se usa generalmente
+    para dar estilos atrave de css o para usar algo demnominado 
+    "delegacio de eventos " en javascript
+
+    hr: horizontal rule, se utiliza para decire al navegaor que vamos a cambiar de tema 
+-->
+  <body>
+    <address>
+      Tony Stark <br />
+      Malibu 10880<br />
+      90265<br />
+      California
+    </address>
+
+    <blockquote
+      cite="deberia.de.ir.link,nose.muestra.en.la.web.es.solo.buenas.practicas"
+    >
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, illo
+        vel accusamus quis enim fugit tenetur similique aut assumenda. Qui
+        consequuntur vero illo esse sed culpa. Laudantium dicta illum laborum?
+      </p>
+    </blockquote>
+    <pre>
+                        hola
+        esto lo realiza la etiqueta 
+
+                                        pre
+    </pre>
+    <!--el di no significa nada en sintaxis pero si para reealizar divisiciones de contenido-->
+    <div>
+      <h2>nombrre usuario</h2>
+      <p>email</p>
+      <p>descripcion</p>
+    </div>
+    <div>
+      <h2>nombrre usuario</h2>
+      <p>email</p>
+      <p>descripcion</p>
+    </div>
+
+    <!--hr sirve para cambio de tema-->
+
+    <main>
+      <section>
+        <h2>receta pan</h2>
+        <ul>
+          <li>harina</li>
+          <li>agua</li>
+          <li>Levadura</li>
+          <li>Sal</li>
+        </ul>
+      </section>
+      <br>
+      <section>
+          <h2>mejores peliculas 2022</h2>
+          <ul>
+              <li>shreck</li>
+              <li>garto con botas</li>
+          </ul>
+      </section>
+
+    </main>
+  </body>
+</html>

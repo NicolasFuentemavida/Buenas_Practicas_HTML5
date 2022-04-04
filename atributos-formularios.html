@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atributos Formularios</title>
+  </head>
+  <!--
+placeholder -> Da una pista de lo que el usuario tiene que introducir
+
+required -> Hace que un campo sea obligatorio
+
+readonly -> Hace que un campo sea de solo lectura
+
+min - max -> Establece el mínimo y máximo de un campo numérico min
+
+maxlenght - minlenght -> establece el minimo y maximo de caracteres de un campo de texto
+
+selected -> Equivale a checked en los select, sirve para establecer una opcion por defecto
+
+disabled -> Desactiva el campo, no se podrá escribir en el autofocus
+
+autofocus -> para poner el foco al cargar el formulario 
+-->
+
+  <body >
+    <form>
+      <div>
+        <label for="ejemplo1">Ememplo 1</label>
+        <input type="text" id="ejemplo1" placeholder="bloque 1" required/>
+      </div>
+      <div>
+        <label for="ejemplo2">Ememplo 2</label>
+        <input type="text" id="ejemplo2" value="bloque 2" readonly/>
+      </div>
+      <div>
+        <div>
+            <label for="ejemplo3">Ememplo 3</label>
+            <input type="text" id="ejemplo3" value="bloque 3" disabled/>
+          </div>
+          <div>
+        <select name="number">
+          <option value="one">One</option>
+          <option value="Two" selected>Two</option>
+        </select>
+      </div>
+      <div>
+        <label for="number">Ejemplo numerico</label>
+        <input type="number" id="number" min="5" max="10" />
+      </div>
+      <div>
+        <label for="text">Ejemplo tipo texto</label>
+        <input type="text" id="text" minlength="3" maxlength="10" required autofocus/>
+      </div>
+      <div>
+        <label for="submit">ejemplo tipo btn</label>
+        <input type="submit" id="submit" />
+      </div>
+    </form>
+  </body>
+</html>

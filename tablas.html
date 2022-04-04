@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="Es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+  </head>
+  <style>
+    col{
+      background-color: aquamarine;
+    }
+  </style>
+  <body>
+    <!--
+    Las tablas en HTML sirven para mostrar contenido tabulado.
+    La estructura básica de una tabla se compone de:
+
+    table -> Etiqueta que encierra una tabla
+
+    tr -> table row, etiqueta que construye una fila
+
+    td -> table data, etiqueta que construye una celda
+
+    truco: el número de celdas dentro de un td establecerá el número de columnas de la tabla.
+
+    truco: el número de celdas dentro de un tr
+    establecerá el número de columnas de la tabla.
+
+    Los títulos de las tablas se establecen con la
+    etiqueta caption, es una etiqueta opcional, y según
+    la especificación esa etiqueta se coloca justo
+    después de la etiqueta table
+
+    Las cabeceras de las tablas se establecen con la
+    etiqueta thead.
+
+    Dentro tendremos una etiqueta tr normal, pero en el
+    caso de las celdas, las estableceremos con la
+    etiqueta th en lugar de td
+
+    El contenido de la tabla debe ir dentro de una
+    etiqueta tbody para representar el cuepo de la tabla 
+
+    De forma opcional podemos colocar un tfoot a la
+    tabla para establecer un pie de tabla, esto es algo
+    que algunas tablas tienen como suma de cantidades o
+    total.
+    Para hacer que las celdas ocupen más de una fila o
+    más de una columna tenemos 2 atributos:
+
+    rowspan: sirve para que una celda ocupe más de
+    una fila, el valor por defecto es 1
+
+    colspan sirve para que una celda ocupe más de
+    una columna, el valor por defecto es 1
+
+    Cuando necesitamos seleccionar una columna, tenemos
+    la etiqueta colgroup, que nos permite seleccionar
+    una columna en concreto. Dentro pondremos tantas
+    etiquetas col como columnas tengamos, cada etiqueta
+    col equivaldrá a una columna siguiendo el mismo 
+    orden que tienen en la tabla
+
+    Si necesitamos que una etiqueta col agrupe más de
+    una columna, tenemos el atributo span, que funciona
+    exactamente igual que rowspan y colspan.
+
+    -->
+    <h1>Tablas</h1>
+    <table>
+      <caption>
+        HORARIO DE CLASES
+      </caption>
+      <colgroup>
+        <col>
+      </colgroup>
+      <thead>
+        <tr>
+          <th></th>
+          <th>L</th>
+          <th>M</th>
+          <th>M</th>
+          <th>J</th>
+          <th>V</th>
+        </tr>
+      </thead>
+      <!--tbdy es opcional pero siempre tine que ir si lo accompana un thead-->
+      <tbody>
+        <tr>
+          <td>8:30 - 9:30</td>
+          <td>Matematicas</td>
+          <td>Lenguaje</td>
+          <td>Soiales</td>
+          <td>Religion</td>
+          <td>Matematicas</td>
+        </tr>
+        <tr>
+          <td>9:30 - 10:30</td>
+          <td>Matematicas</td>
+          <td>Lenguaje</td>
+          <td>Soiales</td>
+          <td>Religion</td>
+          <td>Matematicas</td>
+        </tr>
+        <tr>
+          <td>10:30 - 11:30</td>
+          <td>Matematicas</td>
+          <td>Lenguaje</td>
+          <td>Soiales</td>
+          <td>Religion</td>
+          <td>Matematicas</td>
+        </tr>
+        <tr>
+          <td>11:30 - 13:00</td>
+          <td colspan="5">Recreo</td>
+        </tr>
+        <tr>
+          <td>13:00 - 14:00</td>
+          <td>Matematicas</td>
+          <td>Lenguaje</td>
+          <td>Soiales</td>
+          <td>Religion</td>
+          <td>Matematicas</td>
+        </tr>
+        <tr>
+          <td>14:00 - 15:30</td>
+          <td rowspan="2">Matematicas</td>
+          <td>Lenguaje</td>
+          <td>Soiales</td>
+          <td>Religion</td>
+          <td>Matematicas</td>
+        </tr>
+        <tr>
+          <td>15:30 - 16:30</td>
+          <td>Lenguaje</td>
+          <td>Soiales</td>
+          <td>Religion</td>
+          <td>Matematicas</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">total de asignaturas</td>
+          <td >5</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

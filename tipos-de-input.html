@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ipos de input</title>
+  </head>
+  <!--
+input type:
+    -------------------------------------------
+    button -> Visualmente es igual, pero el formulario no se
+    enviará
+    submit -> Se utiliza para enviar el formulario
+    -------------------------------------------
+    date: -> Se utiliza para introducir una fecha
+    datetime -> Obsoleto
+    datetime-local -> fecha y hora, no funciona en firefox
+    time -> Se utiliza para introducir una hora
+        TIP
+            *Se recomienda usar datetime y time para
+             seleccionar fecha y hora
+             hidden -> Campo oculto, puede contener valor pero
+             no se mostrará
+    month -> Se utiliza para introducir un mes
+    week -> Se utiliza pra introducir el número de semana del
+    año
+    -------------------------------------------
+    search -> Se utiliza para las barras de búsqueda
+    tel -> Se utiliza para introducir números telefónicos
+    email -> Se utiliza para introducir un email
+    password -> Se utiliza para contraseñas
+    url -> Se utiliza para introducir URLS
+    -------------------------------------------
+    color: -> Se utiliza para especificar un color
+    number -> Se utiliza para valores numéricos
+    range -> Se - utiliza para establecer un rango
+    reset -> Se utiliza para resetear el formulario
+    text -> Valor por defecto
+    -------------------------------------------
+    -->
+  <body>
+    <form>
+      <!-- para poder enviar un formulario de etiqueta input es necesario que sea de tipo submit-->
+      <input />
+      <input type="submit" value="enviar input" />
+      <button>enviar</button>
+    </form>
+
+    <form>
+      <!--ccampos de tipo fecha-->
+      <input type="date" />
+      <input type="time" />
+      <input type="datetime-local" />
+      <input type="month" />
+      <input type="week" />
+    </form>
+
+    <form>
+      <div>
+        <label>
+          busqueda
+          <input type="search" />
+        </label>
+      </div>
+      <div>
+        <label>
+          telefono
+          <input type="tel" />
+        </label>
+      </div>
+      <div>
+        <label>
+          email
+          <input type="email" />
+        </label>
+      </div>
+      <div>
+        <label>
+          contrasena
+          <input type="password" />
+        </label>
+      </div>
+      <div>
+        <label>
+          url
+          <input type="url" />
+        </label>
+      </div>
+    </form>
+
+    <form>
+        <input type="color">
+        <input type="number">
+        <input type="range" step="10" min="0" max="50">
+        <input type="reset">
+        <input type="text">
+    </form>
+
+  </body>
+</html>

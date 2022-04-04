@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>seccio cotenido 2</title>
+  </head>
+  <!--
+        section: Es un contenedor genérico que agrupa contenido que
+        está relacionado. Cuando creamos bloques cuyo contenido es
+        parte de un bloque total usaremos section.
+
+        article: Es un contenedor que respresenta contenido
+        independiente, es decir, podemos leer ese fragmento en
+        cualquier otro sitio y tendría sentido por sí mismo.
+
+        aside: se utiliza para representar contenido relacionado pero
+        que no forma parte del contenido principal
+        -->
+  <body>
+      <!-- OCUPAR UNO O EL OTRO -->
+    <header><h1>Noticias Nacionales</h1></header>
+    <aside>Visita mi canal de Youtube</aside>
+    <aside>Visita mi canal de Facebook</aside>
+    <!--ejemplos de aside (contenido indirecto) se puede agregar dentro y fuera del main-->
+    <main>
+      <!--ejemplo de section conteniendo article dentro -->
+      <section>
+        <h2>Notcias del dia</h2>
+        <article>
+          <!-- los aticulos igual pueden llevar su header y footer como correspode-->
+          <header><h3>Noticia 1</h3></header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            itaque suscipit eveniet iste, facilis harum. Quas, magnam modi
+            distinctio eum non, amet earum exercitationem quae perferendis hic
+            eligendi, alias adipisci!
+          </p>
+          <footer>Esta noticia fue realizada por</footer>
+        </article>
+        <article>
+          <h3>Noticia 2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+            praesentium ducimus cumque iure magni id quisquam inventore
+            consequatur reiciendis. Distinctio enim sit possimus. Tenetur
+            eligendi, laudantium rem doloribus sunt error!
+          </p>
+        </article>
+        <article>
+          <h3>Noticia 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+            voluptatum aliquid blanditiis vel earum? Distinctio voluptatem
+            inventore repellendus magni aspernatur hic quis corporis
+            perspiciatis iusto illo modi, nisi nihil autem.
+          </p>
+        </article>
+      </section>
+      <!--ejemplo de article conteniendo section dentro -->
+      <article>
+          <h2>Navegadores mas usados en 2022</h2>
+          <!-- los section igual pueden llevar su header y footer como correspode-->
+          <section>
+              <header><h3>Chrome</h3></header>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ab molestiae libero quia! Necessitatibus ipsam adipisci dicta aspernatur. Minus dolore necessitatibus molestias accusamus. Nostrum cum in voluptatem placeat autem labore!</p>
+              <footer>esta noticia fue realizada por</footer>
+          </section>
+          <section>
+              <h3>Firerfox</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nulla aspernatur officia ex nobis quia expedita repudiandae, reprehenderit aperiam temporibus sint, aut obcaecati nostrum velit nihil quibusdam et. At, laborum!</p>
+          </section>
+      </article>
+    </main>
+    <footer>22-03-2022</footer>
+  </body>
+</html>

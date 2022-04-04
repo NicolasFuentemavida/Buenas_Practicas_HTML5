@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get VS Post</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Ingrese datos a formulario</legend>
+      <form action="enviar" method="get">
+        <div>
+          <input
+            type="text"
+            id="nombre"
+            autofocus
+            placeholder="Ingrese su nombre"
+            minlength="3"
+            maxlength="10"
+            name="name"
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            id="surname"
+            placeholder="Ingrese su apellido"
+            minlength="5"
+            maxlength="20"
+            name="surname"
+          />
+        </div>
+        <div>
+          <input type="email" placeholder="ingrese su email" required />
+        </div>
+        <div>
+          <input
+            type="number"
+            id="edad"
+            placeholder="ingrese su edad"
+            min="18"
+            name="email"
+          />
+        </div>
+        <input type="submit" />
+        
+      </form>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input de seleccion</title>
+  </head>
+  <!--
+    radio -> Permite seleccionar una única opción de una lista de
+    opciones relacionadas.
+
+    checkbox-> Permite seleccionar varias opciones de una lista
+    de opciones relacionadas.
+
+    select -> Crea una lista de opciones donde podemos
+    seleccionar una o varias opciones, Cada opción irá dentro de una etiqueta <option> </option>.
+
+    Si tenemos muchas opciones podemos ordenarlas por categorías a través de la etiqueta <optgroup> con el atributo label para nombrar la categoría
+-->
+  <!-- para realizar una agrupacion de radio es necesario el parametro name-->
+  <body>
+    <h1>Elementos Seleccionales</h1>
+    <section>
+      <h2>Ejemplo RADIO</h2>
+      <article>
+        <form>
+          <div>
+            <h3>Genero</h3>
+            <label
+              >Masculino
+              <!--value corresponde al valor que llega a la maquina-->
+              <input name="genero" type="radio" value="masculino" />
+            </label>
+            <label
+              >Femenino
+              <input name="genero" type="radio" value="femenino" />
+            </label>
+            <label
+              >otros
+              <input name="genero" type="radio" value="otros" />
+            </label>
+          </div>
+          <!--el parametro checked es el que realiza la marcaje poor defecto -->
+          <div>
+            <h3>marcaje por defecto</h3>
+            <label
+              >radio 1
+              <input type="radio" name="defecto" value="radio1" checked />
+            </label>
+            <label
+              >radio 2
+              <input type="radio" name="defecto" value="radio2" />
+            </label>
+            <label
+              >radio 3
+              <input type="radio" name="defecto" value="radio3" />
+            </label>
+          </div>
+        </form>
+      </article>
+      <article>
+        <h2>Ejemplo CHECKBOX</h2>
+        <form>
+          <h3>lenguajes que conoces</h3>
+          <div>
+            <!--<h2>Género</h2>
+                <label>Masculino
+                    <input type="radio" name="gender" value="masculino" checked>
+                </label>
+                <label>Femenino
+                    <input type="radio" name="gender" value="femenino">
+                </label>
+                <label>Desconocido
+                    <input type="radio" name="gender" value="desconocido">
+                </label> -->
+            <label>
+              HTML
+              <input type="checkbox" name="Lenguaje" value="html" checked />
+            </label>
+            <label>
+              CSS
+              <input type="checkbox" name="Lenguaje" value="css" />
+            </label>
+            <label>
+              JavaScript
+              <input type="checkbox" name="Lenguaje" value="javascript" />
+            </label>
+          </div>
+        </form>
+      </article>
+      <article>
+        <!-- <select name="lenguajes" multiple>
+                    <option value="html">HTML</option>
+                    <option value="css">csS</option>
+                    <option value="javascript">JavaScript</option>
+                </select> -->
+        <h2>Ejemplo SELECT</h2>
+        <form>
+          <div>
+            <h3>selecciona 1 lenguaje</h3>
+            <select name="Lenguajes">
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">JavaScript</option>
+            </select>
+          </div>
+          <div>
+            <h3>selecciona multiples lenguuajes precionando Ctrl</h3>
+            <select name="Lenguajes" multiple>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">JavaScript</option>
+            </select>
+          </div>
+          <div>
+            <h3>selecciona mastotas</h3>
+            <select name="mascotas" multiple>
+              <optgroup label="4 patas">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="conejo">Conejo</option>
+              </optgroup>
+              <optgroup label="Voladores">
+                <option value="loro">Loro</option>
+                <option value="canarios">Canarios</option>
+              </optgroup>
+              <optgroup label="Exoticos">
+                <option value="tarantulas">Tarantulas</option>
+                <option value="serpiente">Serpiente</option>
+              </optgroup>
+            </select>
+          </div>
+          <div>
+            <!--misma funcion pero nueva y mas agradable-->
+            <!-- actualmente esta opcion no es validada por validator-->
+            <h3>seleccione mascota</h3>
+            <input type="list"  list="mascotas" />
+            <datalist id="mascotas">
+                <option value="perro">esta es una descripcion</option>
+                <option value="gato"></option>
+                <option value="hamster"></option>
+                <option value="conejo"></option>
+                <option value="loro"></option>
+                <option value="canarios"></option>
+                <option value="tarantulas"></option>
+                <option value="serpiente"></option>
+            </datalist>
+          </div>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>
